@@ -32,6 +32,10 @@ body {
   text-align: center;
   padding-top: 30px;
 }
+.item:hover {
+  background: rgb(198, 206, 185);
+  color: black;
+}
 .firstcard {
   border-top: yellow 5px solid;
   border-bottom: yellow 5px solid;
@@ -52,4 +56,52 @@ body {
 }
 .dropdown {
   margin-left: 10px;
+}
+
+@media (max-width: 414px) {
+  body {
+  }
+  .cards-content {
+    width: 250px;
+    height: 100%;
+    padding-top: 30px;
+  }
+  .cards-content ul {
+    display: flex;
+    flex-flow: column;
+  }
+  .cards-content ul li {
+    margin-top: 10px;
+  }
+  .item {
+    background: white;
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .firstcard {
+    border-top: yellow 5px solid;
+    border-bottom: none;
+  }
+  .secondcard {
+    border-top: green 5px solid;
+    border-bottom: none;
+  }
+  .thirdcard {
+    border-top: red 5px solid;
+    border-bottom: none;
+  }
+  .dropdown-label {
+    font-size: 10px;
+  }
+  .dropdown {
+    margin-left: 20px;
+  }
+  .country {
+    margin-left: 30px;
+  }
+  .container {
+  }
 }

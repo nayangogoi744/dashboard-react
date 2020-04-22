@@ -3,3 +3,9 @@
   width: 60%;
   padding-left: 70px;
 }
+
+@media (max-width: 414px) {
+  .line-chart {
+    display: none;
+  }
+}

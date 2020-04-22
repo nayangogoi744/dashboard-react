@@ -80,10 +80,14 @@ class cards extends Component {
         <section id="selectbox">
           <div class="selectbox-content">
             <p>
-              <h3>Select country from the drop-down list:</h3>
+              <h3 class="dropdown-label">
+                Select country from the drop-down list:
+              </h3>
             </p>
 
-            <label for="country">Country:</label>
+            <label class="country" for="country">
+              Country:
+            </label>
             <select
               id="country"
               class="dropdown"

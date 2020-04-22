@@ -53,7 +53,7 @@ export default class Table extends React.Component {
       <div class="container">
         <table className="table  table-hover table-property">
           <thead>
-            <tr>{this.generateHeader()}</tr>
+            <tr class="table-header">{this.generateHeader()}</tr>
           </thead>
           <tbody>{this.generateTableData()}</tbody>
         </table>
