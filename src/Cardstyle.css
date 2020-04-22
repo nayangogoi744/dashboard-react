@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+body {
+  font-family: "Roboto Slab", serif;
+  background: rgb(245, 240, 240);
+}
+.container {
+  max-width: 100%;
+}
+.cards-content {
+  width: 800px;
+  height: 100%;
+  padding-top: 30px;
+}
+#selectbox {
+  width: 800px;
+  height: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+.cards-content ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+.item {
+  background: white;
+  height: 200px;
+  width: 100%;
+  margin: 0 10px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 30px;
+}
+.firstcard {
+  border-top: yellow 5px solid;
+  border-bottom: yellow 5px solid;
+}
+.secondcard {
+  border-top: green 5px solid;
+  border-bottom: green 5px solid;
+}
+.thirdcard {
+  border-top: red 5px solid;
+  border-bottom: red 5px solid;
+}
+.card-heading {
+  font-size: 30px;
+}
+.card-para {
+  font-size: 20px;
+}
+.dropdown {
+  margin-left: 10px;
+}
