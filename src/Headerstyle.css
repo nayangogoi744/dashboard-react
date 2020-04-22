@@ -1,11 +1,40 @@
-.logo {
-  width: 200px;
-  margin-top: 20px;
+#navbar {
+  display: flex;
+  color: white;
+  overflow: auto;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+  padding-top: 10px;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
 }
-.container {
+ul {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  list-style: none;
 }
+#navbar ul li a {
+  width: 150px;
+  padding: 5px;
+}
+#navbar ul li a:hover {
+  background: rgb(113, 162, 207);
+  text-decoration: none;
+  width: 100px;
+  border-radius: 5px;
+}
+.logo {
+  width: 200px;
+  padding-right: 20px;
+}
+.info {
+  margin-right: 20px;
+}
+
 @media (max-width: 415px) {
+  .mylogo {
+    margin-left: 207px;
+  }
 }

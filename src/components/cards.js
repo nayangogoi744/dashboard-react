@@ -56,27 +56,27 @@ class cards extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div>
         <div class="cards-content">
           <ul>
             <li class="item firstcard">
               <h5 class="card-heading">Confirmed</h5>
               <p>{this.state.confirmed}</p>
-              <p class="card-para">Total Confirmed Cases COVID19</p>
+              <p class="card-para">Total Confirmed Cases</p>
             </li>
             <li class="item secondcard">
               <h5 class="card-heading">Recovered</h5>
               <p>{this.state.recovered}</p>
-              <p class="card-para">Total Recovered Cases COVID19</p>
+              <p class="card-para">Total Recovered Cases</p>
             </li>
             <li class="item thirdcard">
               <h5 class="card-heading">Deaths</h5>
               <p>{this.state.deaths}</p>
-              <p class="card-para">Total Deceased Cases COVID19</p>
+              <p class="card-para">Total Deceased Cases</p>
             </li>
           </ul>
         </div>
-        <p> Last Updated:{this.state.lastupdated}</p>
+        <p class="lastupdated"> Last Updated:{this.state.lastupdated}</p>
         <section id="selectbox">
           <div class="selectbox-content">
             <p>

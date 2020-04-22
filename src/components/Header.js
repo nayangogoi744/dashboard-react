@@ -1,15 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import image from "../images/image.png";
 import "../Headerstyle.css";
 
 class Header extends Component {
-    render() {
-        return (
-            <div className="container">
-               <img className="logo" src={image} alt="COVID-19" style={{textAlign:"center"}}/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <navbar id="navbar">
+        <div class="mylogo">
+          <img
+            className="logo"
+            src={image}
+            alt="COVID-19"
+            style={{ textAlign: "center" }}
+          />
+        </div>
+        <ul>
+          <li>
+            <a class="info" href="#">
+              COVID19 Information
+            </a>
+          </li>
+        </ul>
+      </navbar>
+    );
+  }
 }
 
 export default Header;

@@ -1,11 +1,16 @@
 .table-property {
-  width: 60%;
-  padding-left: 70px;
+  width: 100%;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 @media (max-width: 414px) {
   .table-property {
     width: 100%;
     margin-right: 20px;
+    margin-left: 10px;
   }
   .table-header {
     font-size: 13px;

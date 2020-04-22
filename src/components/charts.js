@@ -43,9 +43,10 @@ export default class charts extends React.Component {
       ],
     };
     return (
-      <div class="container ">
+      <div class="chart-app">
         <div class="line-chart">
           <Line
+            class="adjust-line"
             data={state}
             options={{
               title: {

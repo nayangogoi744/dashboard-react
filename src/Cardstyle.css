@@ -1,15 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
-body {
-  font-family: "Roboto Slab", serif;
-  background: rgb(245, 240, 240);
-}
-.container {
-  max-width: 100%;
-}
 .cards-content {
   width: 800px;
   height: 100%;
   padding-top: 30px;
+}
+.lastupdated {
+  text-align: center;
+  padding-top: 5px;
 }
 #selectbox {
   width: 800px;
@@ -37,16 +33,13 @@ body {
   color: black;
 }
 .firstcard {
-  border-top: yellow 5px solid;
-  border-bottom: yellow 5px solid;
+  border-top: yellow 10px solid;
 }
 .secondcard {
-  border-top: green 5px solid;
-  border-bottom: green 5px solid;
+  border-top: green 10px solid;
 }
 .thirdcard {
-  border-top: red 5px solid;
-  border-bottom: red 5px solid;
+  border-top: red 10px solid;
 }
 .card-heading {
   font-size: 30px;
@@ -59,16 +52,22 @@ body {
 }
 
 @media (max-width: 414px) {
-  body {
-  }
   .cards-content {
-    width: 250px;
-    height: 100%;
+    width: 100%;
     padding-top: 30px;
+  }
+  .lastupdated {
+    padding-top: 5px;
+    margin-left: 207px;
   }
   .cards-content ul {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item:hover {
+    background: rgb(198, 206, 185);
+    color: black;
   }
   .cards-content ul li {
     margin-top: 10px;
@@ -76,10 +75,11 @@ body {
   .item {
     background: white;
     height: 200px;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     text-align: center;
     padding-top: 30px;
+    margin-left: 207px;
   }
   .firstcard {
     border-top: yellow 5px solid;
@@ -95,13 +95,13 @@ body {
   }
   .dropdown-label {
     font-size: 10px;
+    margin-left: 207px;
   }
   .dropdown {
     margin-left: 20px;
   }
   .country {
     margin-left: 30px;
-  }
-  .container {
+    margin-left: 150px;
   }
 }
