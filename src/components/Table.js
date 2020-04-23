@@ -50,14 +50,20 @@ export default class Table extends React.Component {
 
   render() {
     return (
-      <div class="items">
-        <table className="table  table-hover table-property">
-          <thead>
-            <tr class="table-header">{this.generateHeader()}</tr>
-          </thead>
-          <tbody>{this.generateTableData()}</tbody>
-        </table>
-      </div>
+      <React.Fragment>
+        <div class="table-item">
+          <div class="left-table-header">
+            <h5>Corona Affected Persons in India</h5>
+          </div>
+
+          <table className="table  table-hover table-property">
+            <thead>
+              <tr class="table-header">{this.generateHeader()}</tr>
+            </thead>
+            <tbody class="table-body">{this.generateTableData()}</tbody>
+          </table>
+        </div>
+      </React.Fragment>
     );
   }
 }

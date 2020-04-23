@@ -1,7 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 
-.chart-app {
-  width: 100%;
+.App {
+  width: 80%;
+  height: 100%;
+  background: white;
+  margin-top: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.chart-header {
+  background: rgb(224, 233, 93);
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+.chart-header:hover {
+  background: rgb(165, 177, 3);
+  cursor: pointer;
 }
 
 @media (max-width: 414px) {

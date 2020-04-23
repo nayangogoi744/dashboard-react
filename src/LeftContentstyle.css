@@ -1,0 +1,19 @@
+.content {
+  background: white;
+  margin-bottom: 2000px;
+  border-radius: 10px;
+  width: 80%;
+  height: 100%;
+}
+.chart-header-2 {
+  background: rgb(33, 199, 88);
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+.chart-header-2:hover {
+  background: rgb(20, 126, 55);
+  cursor: pointer;
+}

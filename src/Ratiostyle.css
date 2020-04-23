@@ -1,0 +1,14 @@
+.pie-header {
+  padding-top: 10px;
+  background: rgb(101, 136, 202);
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 30px;
+}
+.pie-header:hover {
+  background: rgb(38, 84, 170);
+  cursor: pointer;
+}

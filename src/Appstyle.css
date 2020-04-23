@@ -9,3 +9,10 @@ body {
   flex-direction: column;
   max-width: 100%;
 }
+.items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-right: 20px;
+  width: 90%;
+}

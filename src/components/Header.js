@@ -16,7 +16,7 @@ class Header extends Component {
         </div>
         <ul>
           <li>
-            <a class="info" href="#">
+            <a class="info" href="https://www.mohfw.gov.in/">
               COVID19 Information
             </a>
           </li>

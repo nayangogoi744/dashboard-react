@@ -1,30 +1,33 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Line } from "react-chartjs-2";
-import "../Chartstyle.css";
+import "../Statestyle.css";
 const Charts = () => {
   const [chartData, setChartData] = useState({});
   const [dailyconfirmed, setDailyRecovered] = useState([]);
   const [date, setDate] = useState([]);
 
   const chart = () => {
-    let dailyconfirmed = [];
+    let confirmed = [];
 
-    let date = [];
+    let state = [];
     axios
       .get("https://api.covid19india.org/data.json")
       .then((res) => {
         //console.log(res);
-        for (const dataObj of res.data.cases_time_series) {
-          dailyconfirmed.push(dataObj.dailyconfirmed);
-          date.push(dataObj.date);
+        for (const dataObj of res.data.statewise) {
+          if (dataObj.state !== "Total") {
+            // console.log(state);
+            confirmed.push(dataObj.confirmed);
+            state.push(dataObj.state);
+          }
         }
         setChartData({
-          labels: date,
+          labels: state,
           datasets: [
             {
               label: "Confirmed Cases",
-              data: dailyconfirmed,
+              data: confirmed,
               backgroundColor: "rgba(75,110,192,0.6)",
               borderWidth: 0,
             },
@@ -34,17 +37,17 @@ const Charts = () => {
       .catch((err) => {
         console.log(err);
       });
-    //console.log(dailyconfirmed, date);
+    //console.log(confirmed, state);
   };
   useEffect(() => {
     chart();
   }, []);
   return (
-    <div className="App">
+    <div className="state-data">
       <div class="chart-header">
-        <h5 class="head">Daily Confirmed Cases for India</h5>
+        <h5 class="head">Most Affected States</h5>
       </div>
-      <div class="chart-modify">
+      <div>
         <Line
           data={chartData}
           options={{
